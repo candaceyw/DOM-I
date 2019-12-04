@@ -89,3 +89,29 @@ contactText[2].textContent = siteContent['contact']['email'];
 
 let copyright = document.querySelector("footer p");
 copyright.textContent = siteContent['footer']['copyright']
+
+
+let newNavA = document.createElement('a');
+newNavA.textContent = 'Hello';
+document.querySelector('nav').prepend(newNavA)
+
+let newNavB = document.createElement('a');
+newNavB.textContent = 'Goodbye';
+document.querySelector('nav').appendChild(newNavB)
+
+
+const navColor = document.querySelectorAll('a');
+navColor.forEach( element => {
+  element.style.color = 'green';
+});
+
+
+const contentHeader = document.querySelectorAll(".text-content h4");
+contentHeader.forEach( element => {
+  element.style.color = 'blue';
+});
+
+const mainHeader = document.querySelectorAll(".cta-text h1");
+mainHeader.forEach( element => {
+  element.style.color = 'blue';
+});
