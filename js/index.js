@@ -136,8 +136,12 @@ contactText[0].innerHTML = siteContent.contact.address.split('t S').join('t<br>S
 
 
 
-function myFunction(){
-var btn = document.createElement("button");   // Create a <button> element
-btn.innerHTML = "Don't click it!";                   // Insert text
-document.body.appendChild(btn);   
-}
+let btn = document.createElement("button");  
+btn.innerHTML = "Don't click this!";                
+document.querySelector('footer').prepend(btn);   
+
+btn.style.color = 'white'
+btn.style.backgroundColor = 'gray'
+btn.addEventListener("click", (event) => {
+  alert("Never Gonna Give You Up... You've been Rick Rolled")
+})
