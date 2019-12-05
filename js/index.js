@@ -66,7 +66,7 @@ document.querySelector('button').style.borderRadius = "25px"
 
 
 button.addEventListener('click', (event) => {
-  alert('Getting started is cool! Too bad this button doesn\'t go anywhere, mwahahahahaha!')
+  alert("Never gonna give you up... Never gonna let you down... Never gonna run around and desert you... Never gonna make you cry... Never gonna say goodbye... Never gonna tell a lie and hurt you ")
 })
 
 
@@ -143,5 +143,12 @@ document.querySelector('footer').prepend(btn);
 btn.style.color = 'white'
 btn.style.backgroundColor = 'gray'
 btn.addEventListener("click", (event) => {
-  alert("Never Gonna Give You Up... You've been Rick Rolled")
+  document.getElementById("cta-img").src = 'https://beta.techcrunch.com/wp-content/uploads/2011/02/80782297.jpg';
 })
+
+
+// btn.style.color = 'white'
+// btn.style.backgroundColor = 'gray'
+// btn.addEventListener("click", (event) => {
+//   alert("Never gonna give you up... Never gonna let you down... Never gonna run around and desert you... Never gonna make you cry... Never gonna say goodbye... Never gonna tell a lie and hurt you ")
+// })
