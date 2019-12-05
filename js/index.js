@@ -42,12 +42,15 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navigation = document.querySelectorAll('a');
-navigation[0].textContent = siteContent['nav']['nav-item-1'];
-navigation[1].textContent = siteContent['nav']['nav-item-2'];
-navigation[2].textContent = siteContent['nav']['nav-item-3'];
-navigation[3].textContent = siteContent['nav']['nav-item-4'];
-navigation[4].textContent = siteContent['nav']['nav-item-5'];
-navigation[5].textContent = siteContent['nav']['nav-item-6'];
+// navigation[0].textContent = siteContent['nav']['nav-item-1'];
+// navigation[1].textContent = siteContent['nav']['nav-item-2'];
+// navigation[2].textContent = siteContent['nav']['nav-item-3'];
+// navigation[3].textContent = siteContent['nav']['nav-item-4'];
+// navigation[4].textContent = siteContent['nav']['nav-item-5'];
+// navigation[5].textContent = siteContent['nav']['nav-item-6'];
+navigation.forEach((element, i) => {
+  element.textContent = siteContent['nav'][`nav-item-${i+1}`]
+} )
 
 let ctaimg = document.getElementById("cta-img")
 ctaimg.setAttribute('src', siteContent["cta"]["img-src"]);
